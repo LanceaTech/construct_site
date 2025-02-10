@@ -1,9 +1,9 @@
 "use client";
-import { Building2, Home, Factory, Tool, PaintBucket, Ruler } from 'lucide-react';
+import { Building, Home, Factory, Wrench, Ruler } from 'lucide-react';
 
 const services = [
   {
-    icon: <Building2 className="w-12 h-12" />,
+    icon: <Building className="w-12 h-12" />,
     title: "Commercial Construction",
     description: "Modern office buildings and retail spaces built to last"
   },
@@ -12,7 +12,11 @@ const services = [
     title: "Residential Development",
     description: "Custom homes and multi-family residential complexes"
   },
-  // Add more services
+  {
+    icon: <Factory className="w-12 h-12" />,
+    title: "Industrial Projects",
+    description: "State-of-the-art industrial facilities"
+  }
 ];
 
 export default function Services() {
