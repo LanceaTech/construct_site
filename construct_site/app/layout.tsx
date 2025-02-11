@@ -1,5 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import { Inter } from "next/font/google";
+import { Suspense } from "react";
 import "./globals.css";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
@@ -52,13 +53,15 @@ export default function RootLayout({
         <PreloadResources />
       </head>
       <body className={`${inter.className} antialiased`}>
-        <LoadingBar />
-        <Navbar />
-        <main className="min-h-screen pt-16">
-          {children}
-        </main>
-        <Footer />
-        <ScrollToTop />
+        <Suspense fallback={null}>
+          <LoadingBar />
+          <Navbar />
+          <main className="min-h-screen pt-16">
+            {children}
+          </main>
+          <Footer />
+          <ScrollToTop />
+        </Suspense>
       </body>
     </html>
   );

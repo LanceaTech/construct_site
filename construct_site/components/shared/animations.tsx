@@ -2,22 +2,20 @@
 import { motion } from 'framer-motion';
 import { useEffect, useState } from 'react';
 
-// Fade up animation component
-export function FadeUp({ 
-  children, 
-  delay = 0,
-  className = "" 
-}: { 
+interface AnimationProps {
   children: React.ReactNode;
-  delay?: number;
   className?: string;
-}) {
+  delay?: number;
+}
+
+// Fade up animation component
+export function FadeUp({ children, delay = 0, className = "" }: AnimationProps) {
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
     const timer = setTimeout(() => {
       setIsVisible(true);
-    }, 100); // Small delay for component mount
+    }, 100);
 
     return () => clearTimeout(timer);
   }, []);
@@ -26,7 +24,7 @@ export function FadeUp({
     <motion.div
       initial={{ opacity: 0, y: 20 }}
       animate={isVisible ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
-      transition={{ duration: 0.6, delay: delay }}
+      transition={{ duration: 0.6, delay }}
       className={className}
     >
       {children}
@@ -35,19 +33,13 @@ export function FadeUp({
 }
 
 // Scroll reveal animation component
-export function ScrollReveal({ 
-  children,
-  className = "" 
-}: { 
-  children: React.ReactNode;
-  className?: string;
-}) {
+export function ScrollReveal({ children, className = "", delay = 0 }: AnimationProps) {
   return (
     <motion.div
       initial={{ opacity: 0, y: 20 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, margin: "-100px" }}
-      transition={{ duration: 0.6 }}
+      transition={{ duration: 0.6, delay }}
       className={className}
     >
       {children}
@@ -56,11 +48,7 @@ export function ScrollReveal({
 }
 
 // Line animation component
-export function AnimatedLine({ 
-  className = "" 
-}: { 
-  className?: string;
-}) {
+export function AnimatedLine({ className = "" }: { className?: string }) {
   return (
     <motion.div
       initial={{ scaleX: 0 }}

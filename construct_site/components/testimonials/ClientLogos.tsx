@@ -20,8 +20,12 @@ export default function ClientLogos() {
         
         <div className="grid grid-cols-2 sm:grid-cols-4 gap-8">
           {logos.map((logo, i) => (
-            <ScrollReveal key={i} delay={i * 0.1}>
-              <div className="flex items-center justify-center p-4 bg-white rounded-lg shadow mx-auto w-full max-w-[160px] hover:shadow-lg transition-shadow">
+            <ScrollReveal 
+              key={i} 
+              delay={i * 0.1}
+              className="flex items-center justify-center"
+            >
+              <div className="p-4 bg-white rounded-lg shadow mx-auto w-full max-w-[160px] hover:shadow-lg transition-shadow">
                 <OptimizedImage
                   src={logo.image}
                   alt={logo.name}
