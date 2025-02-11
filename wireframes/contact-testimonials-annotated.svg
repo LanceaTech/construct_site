@@ -1,0 +1,65 @@
+<svg viewBox="0 0 800 2000" xmlns="http://www.w3.org/2000/svg">
+  <!-- Contact Page -->
+  <g transform="translate(0, 0)">
+    <text x="50" y="20" font-size="14" fill="#666">Contact Page</text>
+    <rect x="50" y="40" width="300" height="50" fill="#ddd"/>
+    <text x="70" y="70" font-size="24" fill="#444">Contact Us</text>
+
+    <!-- Contact Form -->
+    <g transform="translate(150, 140)">
+      <text x="-100" y="-20" font-size="14" fill="#666">Contact Form Section</text>
+      <rect width="500" height="600" rx="8" fill="#f0f0f0"/>
+      
+      <!-- Form Title -->
+      <text x="100" y="40" font-size="20" fill="#444">Get In Touch</text>
+      
+      <!-- Name Field -->
+      <text x="50" y="110" font-size="14" fill="#666">Name</text>
+      <rect x="50" y="120" width="400" height="40" rx="4" fill="#e0e0e0"/>
+      
+      <!-- Email Field -->
+      <text x="50" y="190" font-size="14" fill="#666">Email</text>
+      <rect x="50" y="200" width="400" height="40" rx="4" fill="#e0e0e0"/>
+      
+      <!-- Phone Field -->
+      <text x="50" y="270" font-size="14" fill="#666">Phone Number</text>
+      <rect x="50" y="280" width="400" height="40" rx="4" fill="#e0e0e0"/>
+      
+      <!-- Message Field -->
+      <text x="50" y="350" font-size="14" fill="#666">Message</text>
+      <rect x="50" y="360" width="400" height="120" rx="4" fill="#e0e0e0"/>
+      
+      <!-- Submit Button -->
+      <rect x="50" y="520" width="400" height="50" rx="4" fill="#ddd"/>
+      <text x="200" y="550" font-size="16" fill="#444">Send Message</text>
+    </g>
+
+    <!-- Contact Info Cards -->
+    <g transform="translate(50, 800)">
+      <text x="0" y="-20" font-size="14" fill="#666">Contact Information</text>
+      <!-- Address -->
+      <rect width="220" height="120" rx="8" fill="#e0e0e0"/>
+      <text x="70" y="40" font-size="16" fill="#444">Address</text>
+      <text x="40" y="70" font-size="14" fill="#666">123 Business St</text>
+      <text x="40" y="90" font-size="14" fill="#666">City, State 12345</text>
+
+      <!-- Phone -->
+      <rect x="250" width="220" height="120" rx="8" fill="#e0e0e0"/>
+      <text x="320" y="40" font-size="16" fill="#444">Phone</text>
+      <text x="290" y="70" font-size="14" fill="#666">(123) 456-7890</text>
+
+      <!-- Email -->
+      <rect x="500" width="220" height="120" rx="8" fill="#e0e0e0"/>
+      <text x="570" y="40" font-size="16" fill="#444">Email</text>
+      <text x="540" y="70" font-size="14" fill="#666">info@buildtech.com</text>
+    </g>
+  </g>
+
+  <!-- Testimonials Page -->
+  <g transform="translate(0, 1000)">
+    <text x="50" y="20" font-size="14" fill="#666">Testimonials Page</text>
+    <rect x="50" y="40" width="300" height="50" fill="#ddd"/>
+    <text x="70" y="70" font-size="24" fill="#444">Client Testimonials</text>
+
+    <!-- Testimonials Grid -->
+    

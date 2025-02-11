@@ -1,0 +1,95 @@
+<svg viewBox="0 0 800 1600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Header -->
+  <text x="50" y="20" font-size="14" fill="#666">Page Title</text>
+  <rect x="50" y="40" width="300" height="50" fill="#ddd"/>
+  <text x="70" y="70" font-size="24" fill="#444">About Us</text>
+
+  <!-- History Timeline -->
+  <g transform="translate(50, 140)">
+    <text x="0" y="-20" font-size="14" fill="#666">History Timeline Section</text>
+    <rect width="700" height="50" fill="#ddd"/>
+    <text x="280" y="30" font-size="20" fill="#444">Our History</text>
+    <g transform="translate(0, 80)">
+      <!-- Timeline items -->
+      <g transform="translate(0, 0)">
+        <circle cx="40" cy="40" r="40" fill="#e0e0e0"/>
+        <text x="25" y="45" font-size="16" fill="#444">2000</text>
+        <rect x="100" y="20" width="600" height="40" fill="#e0e0e0"/>
+        <text x="120" y="45" font-size="14" fill="#444">Company established</text>
+      </g>
+      <g transform="translate(0, 100)">
+        <circle cx="40" cy="40" r="40" fill="#e0e0e0"/>
+        <text x="25" y="45" font-size="16" fill="#444">2010</text>
+        <rect x="100" y="20" width="600" height="40" fill="#e0e0e0"/>
+        <text x="120" y="45" font-size="14" fill="#444">Major commercial projects</text>
+      </g>
+      <g transform="translate(0, 200)">
+        <circle cx="40" cy="40" r="40" fill="#e0e0e0"/>
+        <text x="25" y="45" font-size="16" fill="#444">2015</text>
+        <rect x="100" y="20" width="600" height="40" fill="#e0e0e0"/>
+        <text x="120" y="45" font-size="14" fill="#444">Green building initiative</text>
+      </g>
+      <g transform="translate(0, 300)">
+        <circle cx="40" cy="40" r="40" fill="#e0e0e0"/>
+        <text x="25" y="45" font-size="16" fill="#444">2020</text>
+        <rect x="100" y="20" width="600" height="40" fill="#e0e0e0"/>
+        <text x="120" y="45" font-size="14" fill="#444">International operations</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- Values Section -->
+  <g transform="translate(50, 640)">
+    <text x="0" y="-20" font-size="14" fill="#666">Values Section</text>
+    <rect width="700" height="50" fill="#ddd"/>
+    <text x="300" y="30" font-size="20" fill="#444">Our Values</text>
+    <g transform="translate(0, 80)">
+      <!-- Value Cards -->
+      <g transform="translate(0, 0)">
+        <rect width="160" height="160" rx="8" fill="#e0e0e0"/>
+        <text x="50" y="80" font-size="16" fill="#444">Quality</text>
+        <text x="20" y="110" font-size="12" fill="#666">Highest standards</text>
+      </g>
+      <g transform="translate(180, 0)">
+        <rect width="160" height="160" rx="8" fill="#e0e0e0"/>
+        <text x="45" y="80" font-size="16" fill="#444">Timeliness</text>
+        <text x="20" y="110" font-size="12" fill="#666">On-time delivery</text>
+      </g>
+      <g transform="translate(360, 0)">
+        <rect width="160" height="160" rx="8" fill="#e0e0e0"/>
+        <text x="40" y="80" font-size="16" fill="#444">Innovation</text>
+        <text x="20" y="110" font-size="12" fill="#666">Modern solutions</text>
+      </g>
+      <g transform="translate(540, 0)">
+        <rect width="160" height="160" rx="8" fill="#e0e0e0"/>
+        <text x="45" y="80" font-size="16" fill="#444">Safety</text>
+        <text x="20" y="110" font-size="12" fill="#666">Zero accidents</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- Team Section -->
+  <g transform="translate(50, 940)">
+    <text x="0" y="-20" font-size="14" fill="#666">Team Section</text>
+    <rect width="700" height="50" fill="#ddd"/>
+    <text x="280" y="30" font-size="20" fill="#444">Our Leadership Team</text>
+    <g transform="translate(0, 80)">
+      <!-- Team Cards -->
+      <g transform="translate(0, 0)">
+        <circle cx="110" cy="80" r="60" fill="#e0e0e0"/>
+        <text x="80" y="180" font-size="16" fill="#444">Robert Johnson</text>
+        <text x="100" y="210" font-size="14" fill="#666">CEO</text>
+      </g>
+      <g transform="translate(260, 0)">
+        <circle cx="110" cy="80" r="60" fill="#e0e0e0"/>
+        <text x="80" y="180" font-size="16" fill="#444">Sarah Smith</text>
+        <text x="90" y="210" font-size="14" fill="#666">Operations</text>
+      </g>
+      <g transform="translate(520, 0)">
+        <circle cx="110" cy="80" r="60" fill="#e0e0e0"/>
+        <text x="80" y="180" font-size="16" fill="#444">Michael Brown</text>
+        <text x="90" y="210" font-size="14" fill="#666">Technical</text>
+      </g>
+    </g>
+  </g>
+</svg>

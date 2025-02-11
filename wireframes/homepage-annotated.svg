@@ -1,0 +1,62 @@
+<svg viewBox="0 0 800 1200" xmlns="http://www.w3.org/2000/svg">
+  <!-- Navigation -->
+  <rect x="0" y="0" width="800" height="64" fill="#f0f0f0"/>
+  <rect x="20" y="16" width="120" height="32" fill="#ddd"/>
+  <text x="40" y="38" font-size="14" fill="#666">BuildTech Pro</text>
+  <g transform="translate(400, 16)">
+    <rect x="0" y="0" width="60" height="32" fill="#e0e0e0"/>
+    <text x="15" y="20" font-size="12" fill="#666">Home</text>
+    <rect x="80" y="0" width="60" height="32" fill="#e0e0e0"/>
+    <text x="90" y="20" font-size="12" fill="#666">About</text>
+    <rect x="160" y="0" width="60" height="32" fill="#e0e0e0"/>
+    <text x="165" y="20" font-size="12" fill="#666">Services</text>
+    <rect x="240" y="0" width="60" height="32" fill="#e0e0e0"/>
+    <text x="245" y="20" font-size="12" fill="#666">Contact</text>
+  </g>
+
+  <!-- Hero Section -->
+  <rect x="0" y="64" width="800" height="500" fill="#e6e6e6"/>
+  <g transform="translate(50, 164)">
+    <rect width="500" height="60" fill="#ddd"/>
+    <text x="0" y="-20" font-size="14" fill="#666">Hero Section</text>
+    <text x="10" y="35" font-size="24" fill="#444">Building Tomorrow's Infrastructure Today</text>
+    <rect y="80" width="400" height="40" fill="#ddd"/>
+    <text x="10" y="105" font-size="16" fill="#444">Excellence in construction with over two decades of experience</text>
+    <rect y="160" width="180" height="48" rx="8" fill="#ccc"/>
+    <text x="40" y="190" font-size="16" fill="#444">Get Started</text>
+  </g>
+
+  <!-- About Preview -->
+  <g transform="translate(0, 564)">
+    <text x="50" y="20" font-size="14" fill="#666">About Section</text>
+    <rect x="50" y="40" width="300" height="40" fill="#ddd"/>
+    <text x="60" y="65" font-size="20" fill="#444">About Us</text>
+    <rect x="50" y="100" width="700" height="80" fill="#e0e0e0"/>
+    <text x="60" y="135" font-size="14" fill="#444">25 years of excellence in construction, delivering quality projects on time.</text>
+  </g>
+
+  <!-- Services Preview -->
+  <g transform="translate(50, 824)">
+    <text x="0" y="-20" font-size="14" fill="#666">Services Section</text>
+    <rect width="700" height="40" fill="#ddd"/>
+    <text x="280" y="25" font-size="20" fill="#444">Our Services</text>
+    <g transform="translate(0, 60)">
+      <!-- Service Cards -->
+      <g transform="translate(0, 0)">
+        <rect width="220" height="220" rx="8" fill="#e0e0e0"/>
+        <text x="40" y="100" font-size="16" fill="#444">Commercial</text>
+        <text x="30" y="140" font-size="14" fill="#666">Modern office buildings</text>
+      </g>
+      <g transform="translate(240, 0)">
+        <rect width="220" height="220" rx="8" fill="#e0e0e0"/>
+        <text x="40" y="100" font-size="16" fill="#444">Residential</text>
+        <text x="30" y="140" font-size="14" fill="#666">Custom homes</text>
+      </g>
+      <g transform="translate(480, 0)">
+        <rect width="220" height="220" rx="8" fill="#e0e0e0"/>
+        <text x="40" y="100" font-size="16" fill="#444">Industrial</text>
+        <text x="30" y="140" font-size="14" fill="#666">Manufacturing facilities</text>
+      </g>
+    </g>
+  </g>
+</svg>

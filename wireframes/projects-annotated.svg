@@ -1,0 +1,61 @@
+<svg viewBox="0 0 800 1200" xmlns="http://www.w3.org/2000/svg">
+  <!-- Header -->
+  <text x="50" y="20" font-size="14" fill="#666">Page Title</text>
+  <rect x="50" y="40" width="300" height="50" fill="#ddd"/>
+  <text x="70" y="70" font-size="24" fill="#444">Our Projects</text>
+
+  <!-- Filter Buttons -->
+  <g transform="translate(200, 140)">
+    <text x="-150" y="-20" font-size="14" fill="#666">Category Filters</text>
+    <rect width="80" height="32" rx="16" fill="#ddd"/>
+    <text x="25" y="20" font-size="12" fill="#444">All</text>
+    <rect x="100" width="80" height="32" rx="16" fill="#e0e0e0"/>
+    <text x="110" y="20" font-size="12" fill="#444">Commercial</text>
+    <rect x="200" width="80" height="32" rx="16" fill="#e0e0e0"/>
+    <text x="210" y="20" font-size="12" fill="#444">Residential</text>
+    <rect x="300" width="80" height="32" rx="16" fill="#e0e0e0"/>
+    <text x="315" y="20" font-size="12" fill="#444">Industrial</text>
+  </g>
+
+  <!-- Projects Grid -->
+  <g transform="translate(50, 200)">
+    <text x="0" y="-20" font-size="14" fill="#666">Projects Gallery</text>
+    <!-- Row 1 -->
+    <g transform="translate(0, 0)">
+      <!-- Project Card 1 -->
+      <rect width="230" height="280" rx="8" fill="#e0e0e0"/>
+      <rect x="0" y="0" width="230" height="160" fill="#ddd"/>
+      <text x="10" y="190" font-size="16" fill="#444">Modern Office Complex</text>
+      <text x="10" y="220" font-size="14" fill="#666">State-of-the-art commercial building</text>
+      <text x="10" y="240" font-size="14" fill="#666">with sustainable features</text>
+
+      <!-- Project Card 2 -->
+      <g transform="translate(250, 0)">
+        <rect width="230" height="280" rx="8" fill="#e0e0e0"/>
+        <rect x="0" y="0" width="230" height="160" fill="#ddd"/>
+        <text x="10" y="190" font-size="16" fill="#444">Luxury Apartments</text>
+        <text x="10" y="220" font-size="14" fill="#666">High-end residential complex</text>
+        <text x="10" y="240" font-size="14" fill="#666">with premium amenities</text>
+      </g>
+
+      <!-- Project Card 3 -->
+      <g transform="translate(500, 0)">
+        <rect width="230" height="280" rx="8" fill="#e0e0e0"/>
+        <rect x="0" y="0" width="230" height="160" fill="#ddd"/>
+        <text x="10" y="190" font-size="16" fill="#444">Tech Campus</text>
+        <text x="10" y="220" font-size="14" fill="#666">Innovation hub with</text>
+        <text x="10" y="240" font-size="14" fill="#666">modern facilities</text>
+      </g>
+    </g>
+
+    <!-- Row 2 -->
+    <g transform="translate(0, 300)">
+      <!-- More project cards with similar structure -->
+      <rect width="230" height="280" rx="8" fill="#e0e0e0"/>
+      <rect x="0" y="0" width="230" height="160" fill="#ddd"/>
+      <text x="10" y="190" font-size="16" fill="#444">Shopping Mall</text>
+      <text x="10" y="220" font-size="14" fill="#666">Retail space with</text>
+      <text x="10" y="240" font-size="14" fill="#666">modern architecture</text>
+    </g>
+  </g>
+</svg>
