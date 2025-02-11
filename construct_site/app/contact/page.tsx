@@ -1,9 +1,10 @@
 import ContactForm from "@/components/contact/ContactForm";
+import { PageTransition } from "@/components/shared/animations";
 
 export default function ContactPage() {
   return (
-    <div className="container py-16">
+    <PageTransition>
       <ContactForm />
-    </div>
+    </PageTransition>
   );
 }

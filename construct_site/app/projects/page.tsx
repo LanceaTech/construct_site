@@ -1,10 +1,10 @@
 import ProjectGallery from "@/components/projects/ProjectGallery";
+import { PageTransition } from "@/components/shared/animations";
 
 export default function ProjectsPage() {
   return (
-    <div className="container py-16">
-      <h1 className="text-4xl font-bold mb-8">Our Projects</h1>
+    <PageTransition>
       <ProjectGallery />
-    </div>
+    </PageTransition>
   );
 }

@@ -1,5 +1,8 @@
 "use client";
 import { Star } from 'lucide-react';
+import Container from '../shared/Container';
+import { ScrollReveal, FadeUp } from '../shared/animations';
+import OptimizedImage from '../shared/OptimizedImage';
 
 const testimonials = [
   {
@@ -15,30 +18,40 @@ const testimonials = [
 
 export default function Testimonials() {
   return (
-    <div className="grid md:grid-cols-2 gap-8">
-      {testimonials.map((testimonial) => (
-        <div key={testimonial.id} className="bg-white p-6 rounded-lg shadow-lg">
-          <div className="flex items-center mb-4">
-            <div className="flex-shrink-0 mr-4">
-              <img
-                src={testimonial.image}
-                alt={testimonial.name}
-                className="w-12 h-12 rounded-full"
-              />
+    <Container className="py-12">
+      <FadeUp>
+        <h2 className="text-3xl font-bold text-center mb-12">What Our Clients Say</h2>
+      </FadeUp>
+      
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+        {testimonials.map((testimonial, index) => (
+          <ScrollReveal key={testimonial.id} delay={index * 0.2}>
+            <div className="bg-white p-6 rounded-lg shadow-lg mx-auto w-full max-w-sm md:max-w-none hover:shadow-xl transition-shadow">
+              <div className="flex flex-col sm:flex-row items-center sm:items-start gap-4 mb-4">
+                <div className="flex-shrink-0">
+                  <OptimizedImage
+                    src={testimonial.image}
+                    alt={testimonial.name}
+                    width={64}
+                    height={64}
+                    className="rounded-full"
+                  />
+                </div>
+                <div className="text-center sm:text-left">
+                  <h3 className="font-bold">{testimonial.name}</h3>
+                  <p className="text-gray-600 text-sm">{testimonial.company}</p>
+                  <div className="flex justify-center sm:justify-start mt-2">
+                    {[...Array(testimonial.rating)].map((_, i) => (
+                      <Star key={i} className="w-5 h-5 text-orange-500 fill-current" />
+                    ))}
+                  </div>
+                </div>
+              </div>
+              <p className="text-gray-700 text-center sm:text-left">{testimonial.comment}</p>
             </div>
-            <div>
-              <h3 className="font-bold">{testimonial.name}</h3>
-              <p className="text-gray-600 text-sm">{testimonial.company}</p>
-            </div>
-          </div>
-          <div className="flex mb-2">
-            {[...Array(testimonial.rating)].map((_, i) => (
-              <Star key={i} className="w-5 h-5 text-orange-500 fill-current" />
-            ))}
-          </div>
-          <p className="text-gray-700">{testimonial.comment}</p>
-        </div>
-      ))}
-    </div>
+          </ScrollReveal>
+        ))}
+      </div>
+    </Container>
   );
 }

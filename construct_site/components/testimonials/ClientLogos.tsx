@@ -1,6 +1,7 @@
-// components/testimonials/ClientLogos.tsx
 "use client";
-import { motion } from 'framer-motion';
+import Container from '../shared/Container';
+import { ScrollReveal, FadeUp } from '../shared/animations';
+import OptimizedImage from '../shared/OptimizedImage';
 
 const logos = [
   { name: 'Tech Corp', image: '/clients/tech-corp.png' },
@@ -12,24 +13,27 @@ const logos = [
 export default function ClientLogos() {
   return (
     <div className="py-12 bg-gray-50">
-      <h2 className="text-2xl font-bold text-center mb-8">Trusted By</h2>
-      <div className="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-7xl mx-auto px-4">
-        {logos.map((logo, i) => (
-          <motion.div
-            key={i}
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            transition={{ delay: i * 0.2 }}
-            className="flex items-center justify-center p-4 bg-white rounded-lg shadow"
-          >
-            <img 
-              src={logo.image} 
-              alt={logo.name}
-              className="h-12 object-contain"
-            />
-          </motion.div>
-        ))}
-      </div>
+      <Container>
+        <FadeUp>
+          <h2 className="text-2xl font-bold text-center mb-8">Trusted By</h2>
+        </FadeUp>
+        
+        <div className="grid grid-cols-2 sm:grid-cols-4 gap-8">
+          {logos.map((logo, i) => (
+            <ScrollReveal key={i} delay={i * 0.1}>
+              <div className="flex items-center justify-center p-4 bg-white rounded-lg shadow mx-auto w-full max-w-[160px] hover:shadow-lg transition-shadow">
+                <OptimizedImage
+                  src={logo.image}
+                  alt={logo.name}
+                  width={120}
+                  height={48}
+                  className="h-12 w-auto object-contain"
+                />
+              </div>
+            </ScrollReveal>
+          ))}
+        </div>
+      </Container>
     </div>
   );
 }

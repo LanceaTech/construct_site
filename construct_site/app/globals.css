@@ -26,3 +26,59 @@ body {
     @apply bg-orange-500 text-white px-6 py-3 rounded-lg hover:bg-orange-600 transition-colors;
   }
 }
+
+@layer utilities {
+  /* Loading bar animation */
+  .animate-loading-bar {
+    animation: loading 1s infinite linear;
+    background: linear-gradient(
+      to right,
+      var(--orange-primary) 30%,
+      var(--orange-dark) 50%,
+      var(--orange-primary) 70%
+    );
+    background-size: 200% 100%;
+  }
+
+  @keyframes loading {
+    0% {
+      width: 0%;
+    }
+    50% {
+      width: 70%;
+    }
+    100% {
+      width: 100%;
+    }
+  }
+
+  /* Smooth scrolling */
+  html {
+    scroll-behavior: smooth;
+  }
+
+  /* Hide scrollbar but keep functionality */
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* Custom scrollbar for other elements */
+  .custom-scrollbar {
+    scrollbar-width: thin;
+    scrollbar-color: var(--orange-primary) transparent;
+  }
+  .custom-scrollbar::-webkit-scrollbar {
+    width: 6px;
+  }
+  .custom-scrollbar::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  .custom-scrollbar::-webkit-scrollbar-thumb {
+    background-color: var(--orange-primary);
+    border-radius: 3px;
+  }
+}
